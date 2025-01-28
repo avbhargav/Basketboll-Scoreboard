@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="scoreboard-title">Basketball Scoreboard</h1>
     <div id="scoreboard">
-        <div>
-            <h1>Home</h1>
+      <div id="teams-group-div">
+        <div class="team-div">
+          <h2 class="team-name-h2">HOME</h2>
+          <div class="score-display-div"><p class="score-text-p">0</p></div>
+          <div class="points-btns-group">
+            <button class="point-btn">+1</button>
+            <button class="point-btn">+2</button>
+            <button class="point-btn">+3</button>
+          </div>
         </div>
-        <div>
-            <h1>Guest</h1>
+        <div class="team-div">
+          <h2 class="team-name-h2">GUEST</h2>
+          <p class="score-display-p"><span class="score-text-span">0</span></p>
+          <div class="points-btns-group">
+            <button class="point-btn">+1</button>
+            <button class="point-btn">+2</button>
+            <button class="point-btn">+3</button>
+          </div>
         </div>
+      </div>
     </div>
     <script src="./scripts.js"></script>
-</body>
+  </body>
 </html>
