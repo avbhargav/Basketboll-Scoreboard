@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Score Board</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,20 +18,30 @@
       <div id="teams-group-div">
         <div class="team-div">
           <h2 class="team-name-h2">HOME</h2>
-          <div class="score-display-div"><p class="score-text-p">0</p></div>
+          <div class="score-display-div">
+            <p id="home-display" class="score-text-p">0</p>
+          </div>
           <div class="points-btns-group">
-            <button class="point-btn">+1</button>
-            <button class="point-btn">+2</button>
-            <button class="point-btn">+3</button>
+            <button class="point-btn" onclick="addOnePointToHome()">+1</button>
+            <button class="point-btn" onclick="addTwoPointsToHome()">+2</button>
+            <button class="point-btn" onclick="addThreePointsToHome()">
+              +3
+            </button>
           </div>
         </div>
         <div class="team-div">
           <h2 class="team-name-h2">GUEST</h2>
-          <p class="score-display-p"><span class="score-text-span">0</span></p>
+          <div class="score-display-div">
+            <p id="guest-display" class="score-text-p">0</p>
+          </div>
           <div class="points-btns-group">
-            <button class="point-btn">+1</button>
-            <button class="point-btn">+2</button>
-            <button class="point-btn">+3</button>
+            <button class="point-btn" onclick="addOnePointToGuest()">+1</button>
+            <button class="point-btn" onclick="addTwoPointsToGuest()">
+              +2
+            </button>
+            <button class="point-btn" onclick="addThreePointsToGuest()">
+              +3
+            </button>
           </div>
         </div>
       </div>
