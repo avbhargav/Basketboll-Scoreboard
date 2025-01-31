@@ -26,10 +26,10 @@ body {
 
 #teams-group-div {
     width: 450px;
-    height: 400px;
+    height: 310px;
     display: flex;
     justify-content: space-between;
-    margin: 50px auto;
+    margin: 50px auto 30px auto;
 }
 .team-div {
     width: 200px;
@@ -75,4 +75,36 @@ body {
     background-color: #1B244A;
 }
 
+.point-btn:hover {
+    color:#1B244A;
+    background-color: white;
+}
+
+.point-btn:active {
+    color: #1B244A;
+    background-color: #F94F6D;
+}
+
+.reset-btn {
+    width: 140px;
+    height: 60px;
+    font-family: "TickingTimebombBb-RB0l";
+    font-size: 40px;
+    color:#9AABD8;
+    border: 4px solid #9AABD8;
+    background-color: #1B244A;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: -4px 4px 0 #9AABD8;
+}
+
+.reset-btn:hover {
+    color:#1B244A;
+    background-color: white;
+}
+
+.reset-btn:active {
+    color:#1B244A;
+    background-color: #F94F6D;
+}
 

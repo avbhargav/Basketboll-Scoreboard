@@ -1,5 +1,6 @@
 let totalScore = 0;
 // TODO - need to give hover blink effect on button click. 
+// TODO - need to add the reset button. 
 const homeDisplayEle = document.getElementById("home-display");
 console.log(homeDisplayEle);
 
@@ -50,6 +51,11 @@ function addThreePointsToGuest() {
     console.log(totalScore);
 }
 
+function reset() {
+    totalScore = 0;
+    homeDisplayEle.textContent = totalScore;
+    guestDisplayEle.textContent = totalScore;
+}
 
 
 
